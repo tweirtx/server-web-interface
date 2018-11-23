@@ -5,6 +5,7 @@
   "description": "A web interface to control processes on a server",
   "repository": "https://github.com/tweirtx/server-web-interface",
   "dependencies": {
-    "pm2": "latest"
+    "pm2": "latest",
+    "shell": "latest"
   }
 }
