@@ -1,0 +1,10 @@
+{
+  "name": "server-web-interface",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "description": "A web interface to control processes on a server",
+  "repository": "https://github.com/tweirtx/server-web-interface",
+  "dependencies": {
+    "pm2": "latest"
+  }
+}
