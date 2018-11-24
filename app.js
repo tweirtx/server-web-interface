@@ -21,13 +21,13 @@ function enumerate() {
     return processObjs;
 }
 function stopProcess(procName) {
-    pm2.stop(procName, null);
+    pm2.delete(procName, null);
 }
 function startProcess(procName) {
-    pm2.start(procName);
+    pm2.start("processes/" +procName+".json");
 }
 function gitPull(procDir) {
-    shell.Shell('cd ' + procDir + " && git pull");
+    shell.call('cd ' + procDir + " && git pull");
 }
 
 http.createServer(function (req, res) {
