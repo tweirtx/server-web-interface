@@ -6,7 +6,7 @@ let ref;
 
 
 // Change the objects in the array if you want them to start automatically with the management interface
-const autoStartItems = ['sample'];
+const autoStartItems = ['dozer'];
 
 function enumerate() {
     var processes = [];
@@ -68,7 +68,7 @@ if (!fs.existsSync('processes')) {
     fs.mkdirSync('processes');
 }
 for (let proc in autoStartItems) {
-    startProcess(proc);
+    startProcess(autoStartItems[proc]);
 }
 
 console.log("Ready!");
